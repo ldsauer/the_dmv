@@ -55,5 +55,17 @@ RSpec.describe Registrant do
 
     end
 
+    describe "#earned permit" do
+        it "registrant 2 earned their permit" do
+        
+            registrant_2 = Registrant.new('Penny', 15)
+            
+            expect(registrant_2.permit?).to eq(false)
+            
+            registrant_2.earn_permit
+            
+            expect(registrant_2.permit?).to eq(true)
+        end
+    end
 
 end
