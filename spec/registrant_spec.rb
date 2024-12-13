@@ -3,7 +3,8 @@ require './lib/registrant'
 
 RSpec.describe Registrant do 
     before(:each) do
-        @registrant = Registrant.new
+        @registrant = Registrant.new('Logan', 33)
+
     end
 
     describe '#initalize' do
@@ -14,7 +15,6 @@ RSpec.describe Registrant do
 
    describe '#registrant info' do
         it "has a name" do
-            @registrant = Registrant.new
         
             registrant_1 = Registrant.new('Bruce', 18, true )
             registrant_2 = Registrant.new('Penny', 15, )
@@ -24,7 +24,6 @@ RSpec.describe Registrant do
         end
 
         it "has an age" do 
-            @registrant = Registrant.new
         
             registrant_1 = Registrant.new('Bruce', 18, true )
             registrant_2 = Registrant.new('Penny', 15, )
@@ -34,7 +33,6 @@ RSpec.describe Registrant do
         end
 
         it "has a permit?" do
-            @registrant = Registrant.new
         
             registrant_1 = Registrant.new('Bruce', 18, true )
             registrant_2 = Registrant.new('Penny', 15, )
@@ -44,7 +42,6 @@ RSpec.describe Registrant do
         end
 
         it "definies license data" do
-            @registrant = Registrant.new
         
             registrant_1 = Registrant.new('Bruce', 18, true )
             registrant_2 = Registrant.new('Penny', 15, )
