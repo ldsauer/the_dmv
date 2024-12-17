@@ -150,6 +150,18 @@ RSpec.describe Facility do
       expect(registrant_2.license_data).to eq({:written=>true, :license=>true, :renewed=>true})
     end
   end
+
+
+
+
+
+
+
+
+
+
+
+
 end
 
   
