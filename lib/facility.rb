@@ -37,9 +37,12 @@ class Facility
     end
 
     def administer_road_test(registrant)
-      if 
-
-    
+      if administer_written_test == true
+        #administer road test
+      else
+        false
+      end
+    end
     
   end
 # Helper methods
