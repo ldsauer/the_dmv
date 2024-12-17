@@ -29,6 +29,19 @@ class Facility
    end
   end
 
+  def administer_written_test(registrant)
+    if @permit == true && @age >= 16
+      # administer test
+    else
+      false
+    end
+
+    def administer_road_test(registrant)
+      if 
+
+    
+    
+  end
 # Helper methods
 
   def determine_plate_type_and_fees(vehicle)

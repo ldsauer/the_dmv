@@ -2,12 +2,14 @@ class Registrant
     attr_reader :name, 
                 :age, 
                 :permit, 
-                :license_data
+                :license_data, 
+                :take_writen_test
 
     def initialize (name, age, permit = false)
         @name = name
         @age = age
         @permit = permit
+        @take_writen_test = take_writen_test
     end
 
     def permit?
@@ -26,13 +28,8 @@ class Registrant
         @permit = true
     end
 
-    def administer_written_test
-        if @permit == true && @age >= 16
-            # administer test
-        else
-            false
-        end
+    def take_writen_test
+        @take_writen_test = true
     end
-
 
 end
