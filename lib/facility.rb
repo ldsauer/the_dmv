@@ -29,41 +29,30 @@ class Facility
    end
   end
 
-  # def administer_written_test(registrant)
-  #     if @permit == true && @age >= 16
-  #         # administer test
-  #     else
-  #         false
-  #     end
-  # end
-
-
   def administer_written_test(registrant)
-    if @services.include?("Written Test") && registrant.permit? && registrant.age >= 16
-      registrant.license_data[:written] = true
-      # administer test
-    else
-      false
-    end
+      if @permit == true && @age >= 16
+          # administer written test
+      else
+          false
+      end
   end
 
   def administer_road_test(registrant)
-    if @services.include?("Road Test") && registrant.license_data[:written]
-      registrant.license_data[:license] = true
-      true
+    if administer_written_test == true
+      #administer road test
     else
       false
     end
   end
-    
+
   def renew_drivers_license(registrant)
-    if @services.include?("Renew License") && registrant.license_data[:license]
-      registrant.license_data[:renewed] = true
-      true
+    if administer_road_test == true
+      #renew license
     else
       false
     end
   end
+
 
 # Helper methods
 

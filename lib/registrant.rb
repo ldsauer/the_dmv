@@ -27,4 +27,5 @@ class Registrant
         @take_writen_test = true
     end
 
+
 end
