@@ -30,7 +30,7 @@ class Facility
   end
 
   def administer_written_test(registrant)
-      if registrant.permit == true && @age >= 16
+      if registrant.permit == true && registrant.age >= 16
         registrant.take_writen_test
           # administer written test
       else

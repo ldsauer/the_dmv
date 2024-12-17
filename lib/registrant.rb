@@ -27,5 +27,12 @@ class Registrant
         @take_writen_test = true
     end
 
+    def administer_road_test
+        @administer_road_test = true
+    end
+
+    def renew_drivers_license
+        @renew_drivers_license = true
+    end
 
 end
