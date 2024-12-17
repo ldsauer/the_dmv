@@ -30,7 +30,8 @@ class Facility
   end
 
   def administer_written_test(registrant)
-      if @permit == true && @age >= 16
+      if registrant.permit == true && @age >= 16
+        registrant.take_writen_test
           # administer written test
       else
           false
@@ -38,7 +39,8 @@ class Facility
   end
 
   def administer_road_test(registrant)
-    if administer_written_test == true
+    if registrant.administer_written_test == true
+      registrant.administer_road_test
       #administer road test
     else
       false
@@ -46,7 +48,8 @@ class Facility
   end
 
   def renew_drivers_license(registrant)
-    if administer_road_test == true
+    if registrant.administer_road_test == true
+      registrant.renew_drivers_license
       #renew license
     else
       false
