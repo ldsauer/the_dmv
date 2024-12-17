@@ -3,7 +3,7 @@ require './lib/registrant'
 
 RSpec.describe Registrant do 
     before(:each) do
-        @registrant = Registrant.new('Logan', 33)
+        @registrant = Registrant.new('Logan', 33 )
 
     end
 

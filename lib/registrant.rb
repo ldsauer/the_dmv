@@ -26,4 +26,13 @@ class Registrant
         @permit = true
     end
 
+    def administer_written_test
+        if @permit == true && @age >= 16
+            # administer test
+        else
+            false
+        end
+    end
+
+
 end
