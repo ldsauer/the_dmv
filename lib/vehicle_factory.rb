@@ -1,12 +1,4 @@
 require 'spec_helper'
-
-
-
-
-
-
-
-
 class VehicleFactory
     def create_vehicles(vehicle_data)
         vehicle_data.map do |data|
@@ -19,15 +11,4 @@ class VehicleFactory
           }
         end
     end
-
-
-
-
-
-
-
-
 end
-
-
-

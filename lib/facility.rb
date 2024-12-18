@@ -71,10 +71,4 @@ class Facility
       @collected_fees += 100
     end 
   end
-
-
-
-
-
-
 end
